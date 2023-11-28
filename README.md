@@ -24,6 +24,7 @@ En la primera terminal, introduzca el comando ```python api.py run```.
 <br>
 En la segunda terminal, use ```lt --port 5000 --subdomain oxxo-object-detect```. Es requerido que el subdominio sea el que se especifica en el comando ya que es el dominio de la aplicación, si no se usa, no podrá usarla.
 
+#### **Importante**: Debe de cambiar el path (directorio del archivo denominado "config.json") de "image_directory" y "result_directory" por el path (directorio) en el que se localiza su carpeta static (puede usar el comando ```pwd``` para revisar esto) debido a que la aplicación móvil o el dispositivo que use requiere acceder a las imágenes de los Planogramas.
 ---
 Si desea usar una máquina virtual (vm), se recomienda usar una imagen ubuntu.
 <br>
