@@ -17,60 +17,55 @@ Ya instalado lo anterior es preciso que regrese a la carpeta root (retailOxxoE5)
 8. Instale npm utilizando el comando ```npm install -g npm```.
 9. Instale localtunnel, en caso que desee exponer su aplicación al navegador (no es necesario realizarlo en windows y mac), empleando el comando ```npm install -g localtunnel```.
 Tiene todo listo para correr su app y exponerlo a internet, o si usted lo prefiere en local.
-1. 
 
-
-
-Estos son los comandos para correr la app y el localtunnel (para escuchar el puerto).
-1. Como se necesita tener corriendo dos comandos al mismo tiempo (la app y el que escucha el port) se debe ejecutar ```tmux```.
-2. Para crear una ventana: [ctrl + B] [C]: necesitas tener dos ventanas.
-3. Ya que tienes las ventanas, en la primera corre la api.
-4. Cambia de ventana con [ctrl + B] [N]: ejecuta `lt --port 5000`
-5. Te dará una URL, pégala en tu navegador y sólo por primera vez te pedirá que introduzca la IPv4 address: 129.146.190.252 y dale submit.
-6. Ya puedes acceder a tu app desde cualquier navegador! y ya no requieres volver a poner tu ip, solo copia la URL.
-8. Para salir de tmux: [ctrl + D].
-
-**Importante:** la url vence alrededor de una hora y se tiene que volver a ejecutar el comando `lt --port 5000`.
+Para esto es necesario contar con dos terminales, una será ocupada para la app y la otra, se usará para exponer al puerto 5000.
 <br>
-No necesitarías instalar algun package y/o requeriments ni clonar el repo en teoría porque ya está.  
+En la primera terminal, introduzca el comando ```python api.py run```.
 <br>
-Lo único que me falta de comprobar es el post. 
+En la segunda terminal, use ```lt --port 5000 --subdomain oxxo-object-detect```. Es requerido que el subdominio sea el que se especifica en el comando ya que es el dominio de la aplicación, si no se usa, no podrá usarla.
 
-# GOOGLE CLOUD
+---
+Si desea usar una máquina virtual (vm), se recomienda usar una imagen ubuntu.
+<br>
+Deberá de usar los siguientes comandos:
+
+Actualizar la lista de paquetes de su vm:
 ```
 sudo apt-get update
 ```
+Instalar el paquete venv para poder crear la ambiente virtual:
 ```
 sudo apt-get install install python3.9-venv
 ```
+Crear el ambiente virtual:
 ```
 python3.9 -m venv env
 ```
+Activar el ambiente virtual:
 ```
 source env/bin/activate
 ```
+Instalar nom:
 ```
 sudo apt install npm
 ```
+Instalar localtunnel:
 ```
 sudo npm install -g localtunnel
 ```
+Instalar Flask:
 ```
 pip install Flask
 ```
+Instalar Flask-Cors:
 ```
 pip install Flask-Cors
 ```
+Instalar requirements
 ```
 pip install -r requirements.txt
 ```
-```
-curl ipv4.icanhazip.com
-```
-# STOP PORTS
-```
-lsof -i :5000
-```
-```
-kill -9 <PID>
-```
+ Como se necesita tener corriendo dos comandos al mismo tiempo (la app y el que escucha el port) se debe ejecutar ```tmux```, si no est´instalado lo puede hacer con ```sudo apt-get install tmux```.
+2. Para crear una ventana: [ctrl + B] [C]. Necesita tener dos ventanas.
+3. Ya que tiene las ventanas, en la primera ejecute ```python api.py run```.
+4. Cambie de ventana con [ctrl + B] [N]: ejecute ```lt --port 5000 --subdomain oxxo-object-detect```.
