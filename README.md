@@ -1,5 +1,4 @@
-# VM FINAL FLASK 
-#MANUAL DE USO PARA EL USUARIO
+# MANUAL DE USO E INSTALACIÓN PARA EL USUARIO
 
 ---
 A continuación se muestran los requerimientos que debe de tomar en cuenta para poder ejecutar de forma satisfactoria la aplicación móvil y observar los resultados esperados
