@@ -1,7 +1,7 @@
 # MANUAL DE USO E INSTALACIÓN PARA EL USUARIO
 
 ---
-A continuación se muestran los requerimientos que debe de tomar en cuenta para poder ejecutar de forma satisfactoria la aplicación móvil y observar los resultados esperados
+A continuación se muestran los requerimientos que debe de tomar en cuenta para poder ejecutar de forma satisfactoria la aplicación móvil y observar los resultados esperados tanto en windows como en mac.
 1. Se debe de contar con una versión de python mayor o igual a 3.9 para poder correr sin tener problema alguno los requeriments.
 Enseguida se describen los pasos para ejecutar la app.
 1. Crear un ambiente virtual (venv) en el que correrá la app usando el comando en windows ```(python -m venv .venv)```.
