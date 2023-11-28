@@ -65,7 +65,7 @@ Instalar requirements
 ```
 pip install -r requirements.txt
 ```
- Como se necesita tener corriendo dos comandos al mismo tiempo (la app y el que escucha el port) se debe ejecutar ```tmux```, si no est´instalado lo puede hacer con ```sudo apt-get install tmux```.
-2. Para crear una ventana: [ctrl + B] [C]. Necesita tener dos ventanas.
-3. Ya que tiene las ventanas, en la primera ejecute ```python api.py run```.
-4. Cambie de ventana con [ctrl + B] [N]: ejecute ```lt --port 5000 --subdomain oxxo-object-detect```.
+ Como se necesita tener corriendo dos comandos al mismo tiempo (la app y el que escucha el port) se debe ejecutar ```tmux```, si no está instalado lo puede hacer con ```sudo apt-get install tmux```.
+1. Para crear una ventana: [ctrl + B] [C]. Necesita tener dos ventanas.
+2. Ya que tiene las ventanas, en la primera ejecute ```python api.py run```.
+3. Cambie de ventana con [ctrl + B] [N]: ejecute ```lt --port 5000 --subdomain oxxo-object-detect```.
